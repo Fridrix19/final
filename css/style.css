@@ -29,15 +29,26 @@
         max-width: 414px;
     }
 }
-
+@media (max-width: 428px) {
+    #page1 button {
+      order: 1;
+    }
+    
+    #page2 {
+      order: 2;
+    }
+    
+    #page3 {
+      order: 3;
+    }
+  }
 
 body {
     margin: 0px;
     padding: 0px;
     width: 100%;
-    height: 100%;
     background-image: url(../img/back.jpg);
-    background-size: 100%;
+    background-size:100%;
     overflow-x: hidden;
 
 }
