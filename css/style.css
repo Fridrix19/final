@@ -13,6 +13,16 @@
 
 
 
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-image: url(../img/back.jpg);
+    overflow-x: hidden;
+
+}
 @media (max-width:1200px){
     .container{
         max-width: 1200px;
@@ -43,15 +53,6 @@
     }
   }
 
-body {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    background-image: url(../img/back.jpg);
-    background-size:100%;
-    overflow-x: hidden;
-
-}
 
 
 .butnum {
