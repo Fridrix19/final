@@ -1,7 +1,16 @@
 * {
     margin: 0px;
 }
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-image: url(../img/back.jpg);
+    /* overflow-x: hidden; */
 
+}
 /* body {
     overflow: hidden;
   }
@@ -13,16 +22,7 @@
 
 
 
-body {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    background-size: 100%;
-    background-repeat: repeat-y;
-    background-image: url(../img/back.jpg);
-    overflow-x: hidden;
 
-}
 @media (max-width:1200px){
     .container{
         max-width: 1200px;
@@ -546,10 +546,10 @@ a {
     margin-top: 10%;
   margin-left: 19%;
   height: 42%;
-  width: 100%;
+  width: 60%;
 }
 .titletextgrid table{
-    width: 32%;
+    width: 52%;
    
         font-size: 100vh;
         line-height: 100vh;
@@ -558,7 +558,7 @@ a {
 .titletextgrid h1{
     color: #FFF;
 font-family: Montserrat;
-font-size: 30px;
+font-size: 29px;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
@@ -651,6 +651,10 @@ table {
     -webkit-transition: all 0.25s;
     box-shadow: none;
     transform: scale(0.98);
+}
+
+#btctitle2{
+    display: none;
 }
 @media (max-width:1200px){
     #page1 {
@@ -799,10 +803,10 @@ table {
         margin-top: 10%;
       margin-left: 15%;
       height: 32%;
-      width: 100%;
+      width: 85%;
     }
     .titletextgrid table{
-        width: 35%;
+        width: 41%;
         
     }
     .titletextgrid h1{
@@ -864,7 +868,10 @@ table {
       }
 
 }
-@media (max-width:414px){
+
+@media (max-width:428px){
+    
+    .container{max-width: 414px;} 
     
     .radio-form {
         display: block;
@@ -962,14 +969,15 @@ table {
         background-position: center;
         background-size: 180%;
         background-position-y: 10%;
-        background-position-x: 100%;
+        background-position-x: 99%;
     
     
     }
     #btctitle {
+        display: none;
         position: absolute;
-        max-width: 200%;
-        height: 800px;
+        width: 199%;
+        height: 750px;
         margin-top: -40%;
         margin-left: -94%;
         /* Изначально элемент будет скрыт за пределами видимой области */
@@ -977,6 +985,18 @@ table {
         /* Добавляем плавное появление */
         animation: levitate 2s infinite alternate;
     }
+
+    #btctitle2{
+        display: flex;
+        position: absolute;
+        width: 15%;
+        height: 29%;
+        left: 40%;
+        margin-top: 2%;
+        transition: top 2s ease;
+        animation: levitate 2s infinite alternate;
+    }
+
     
     @keyframes levitate {
         0% {
@@ -1002,13 +1022,17 @@ table {
     }
     
     .logo {
-        margin-left: 10%;
-    margin-right: -6%;
+        position: absolute;
+       display: flex;
+       justify-content: center;
         
     }
     .logo img{
-        width: 250%;
-            
+        width: 70%;
+        padding-left: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         }
     
     .textnav {
@@ -1028,7 +1052,7 @@ table {
     }
     
     .textnav h1 {
-        opacity: 0%;
+        display: none;
         margin: 0px;
         font-family: 'Montserrat', sans-serif;
         font-size: 9px;
@@ -1050,22 +1074,17 @@ table {
     
     }
 
-    .titletext img{
-        padding-top: 9%;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    
-    }
+
     
     .backbuttom {
-        padding-top: 3%;
+
         width: 74%;
         display: flex;
         margin-left: 13%;
     
     }
     .button {
+        z-index: 1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1079,13 +1098,15 @@ table {
         transition: all 0.5s;
         -webkit-transition: all 0.5s;
         font-family: 'Montserrat', sans-serif;
-        width: 90%;
+        width: 80%;
         font-size: 13px;
+        padding: 1%;
         font-weight: 7900;
         z-index: 1;
-        margin-top: 8%;
-        padding-left: 0%;
-        padding-right: 0%;
+        margin-top:-10%;
+        
+        padding:4%;
+
     }
 
     
@@ -1105,391 +1126,95 @@ table {
 
     .titletextgrid{
         display: flex;
+        justify-content: center;
         align-items: center;
-        margin-top: 75%;
+        margin-top: 65%;
       margin-left: 15%;
       height: 40%;
-      width: 100%;
+      width: 80%;
+      margin-bottom: 10%;
+      
     }
     .titletextgrid table{
-        width: 73.3%;
+        width: 100%;
+     
+      
         
     }
     .titletextgrid h1{
         color: #FFF;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    letter-spacing: 7.7px;
+    letter-spacing: 4.6px;
+    
     }
     .titletextgrid h2{
+        text-align: left;
         color: #FFF;
     font-family: Montserrat;
-    font-size: 19.5px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     /* letter-spacing: 0.41px; */
     }
     .titletextgrid h2 span{
-        font-size: 20px;
+        font-size: 20.79px;
     
     }
+    
     .titletextgrid h3{
         color: #FFF;
     font-family: Montserrat;
-    font-size: 19px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
     letter-spacing: 0.41px;
-    padding-top: 13%;
-    padding-bottom: 10%;
-    
-    
+    padding-top: 5%;
+    padding-bottom: 1%;
+
     }
+
     .titletextgrid h3 span2{
-        font-size: 44px;
+        font-size: 42px;
         font-weight: 700;
+    
+       
         
     }
     .titletextgrid p{
+        text-align: left;
         color: #FFF;
         font-family: Montserrat;
         font-size: 15px;
         font-style: normal;
         font-weight: 300;
-        line-height: 30.435px;
+        line-height: 18.435px;
         font-variant: small-caps;
-        letter-spacing: 0.2px;
+        letter-spacing: 1.34x;
+        margin-right: 10%;
+        text-align: center;
+        
+
+
     }
     table {
         border-collapse: collapse;
       }
       
       td {
-        padding: 10px;
+        padding: 10Spx;
       }
-
-
-
-}
-
-@media (max-width:428px){
-    .container{max-width: 414px;} 
-    .radio-form {
-        display: block;
-        margin: auto;
-        max-width: 20em;
+      .texth1 h1 {
+        display: none;
+        opacity: 0%;
         position: relative;
-        opacity: 0%;
-    }
-    
-    .radio-form input {
-        position: fixed;
-        top: -1.5em;
-        left: -1.5em;
-    }
-    
-    .radio-form label {
         cursor: pointer;
-        display: block;
-        font-weight: bold;
-        text-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.2);
-        transition: color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
     }
-    
-    .radio-form label:not(:last-of-type) {
-        margin-bottom: 0.em;
-    }
-    
-    .radio-form label span {
-        box-shadow: 0 0 0 0.2em currentColor inset, 0 0.2em 0.2em rgba(0, 0, 0, 0.2), 0 0.3em 0.2em rgba(0, 0, 0, 0.2) inset;
-        display: inline-block;
-        margin-right: 0.4em;
-        vertical-align: bottom;
-        border-radius: 50%;
-        width: 0.8em;
-        height: 0.8em;
-        transition: transform 0.2s cubic-bezier(0.5, 0, 0.5, 2), box-shadow 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95), color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-    }
-    
-    .radio-form input:checked+label,
-    .radio-form input:checked+label span {
-        color: #255ff4;
-    }
-    
-    .radio-form input:checked+label,
-    .radio-form input:checked+label span {
-        transition-delay: 0.4s;
-    }
-    
-    .radio-form label span {
-        transform: scale(1.2);
-    }
-    
-    .radio-form .worm {
-        top: 0.375em;
-        left: 0.375em;
-        position: absolute;
-    }
-    
-    .radio-form .worm__segment {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0.5em;
-        height: 0.5em;
-        border-radius: 50%;
-        transition: transform 0.4s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-    }
-    
-    .radio-form .worm__segment:before {
-        animation-duration: 0.4s;
-        animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
-        background: currentColor;
-        content: "";
-        display: block;
-        width: 50%;
-        height: 50%;
-        border-radius: 50%;
-    }
-    
-    .radio-form .worm__segment:first-child:before,
-    .radio-form .worm__segment:last-child:before {
-        box-shadow: 0 0 1em 0 currentColor;
-    }
-
-
-
-
-
-    #page1 {
-        width: 100%;
-        height: 869px;
-        /* background-color: rgba(255, 255, 255, 0.192); */
-        background-image: url(../svg/titlesvg.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 180%;
-        background-position-y: 10%;
-        background-position-x: 100%;
-    
-    
-    }
-    #btctitle {
-        position: absolute;
-        max-width: 199%;
-        height: 750px;
-        margin-top: -40%;
-        margin-left: -94%;
-        /* Изначально элемент будет скрыт за пределами видимой области */
-        transition: top 2s ease;
-        /* Добавляем плавное появление */
-        animation: levitate 2s infinite alternate;
-    }
-    
-    @keyframes levitate {
-        0% {
-            transform: translateY(0);
-        }
-    
-        100% {
-            transform: translateY(-10px);
-        }
-    }
-    
-    #vector1 {
-        width: 100%;
-        height: 1080px;
-        z-index: -1;
-    }
-    
-    /* --------- НАВИГАЦИЯ----------- */
-    
-    .nav {
-        width: 100%;
-        height: 100px;
-    }
-    
-    .logo {
-        margin-left: 10%;
-    margin-right: -6%;
-        
-    }
-    .logo img{
-        width: 250%;
-            
-        }
-    
-    .textnav {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 100px;
-    }
-    
-    .texth1 {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 80%;
-        margin-left: -20%;
-        height: 100px;
-    }
-    
-    .textnav h1 {
-        opacity: 0%;
-        margin: 0px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 9px;
-        font-weight: 500;
-        color: white;
-    }
-    
-    a {
-        text-decoration: none;
-        color: #ffffff;
-    }
-    
-    .titletext {
-        margin-top: -8%;
-        display: flex;
-        justify-content: center;
-        width: 800px;
-        height: 35%;
-    
-    }
-
-    .titletext img{
-        padding-top: 9%;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    
-    }
-    
-    .backbuttom {
-        padding-top: 3%;
-        width: 74%;
-        display: flex;
-        margin-left: 13%;
-    
-    }
-    .button {
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 15px;
-        border: 0;
-        border-radius: 100px;
-        background-color: #42D4F8;
-        color: #ffffff;
-        font-weight: Bold;
-        transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        font-family: 'Montserrat', sans-serif;
-        width: 90%;
-        font-size: 13px;
-        font-weight: 7900;
-        z-index: 1;
-        margin-top: 1%;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-
-    
-    .button:hover {
-        background-color: #6fc5ff;
-        box-shadow: 0 0 20px #6fc5ff50;
-        transform: scale(1.1);
-    }
-    
-    .button:active {
-        background-color: #3d94cf;
-        transition: all 0.25s;
-        -webkit-transition: all 0.25s;
-        box-shadow: none;
-        transform: scale(0.98);
-    }
-
-    .titletextgrid{
-        display: flex;
-        align-items: center;
-        margin-top: 65%;
-      margin-left: 12%;
-      height: 40%;
-      width: 100%;
-    }
-    .titletextgrid table{
-        width: 80.3%;
-        
-    }
-    .titletextgrid h1{
-        color: #FFF;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: 7.7px;
-    }
-    .titletextgrid h2{
-        color: #FFF;
-    font-family: Montserrat;
-    font-size: 19.5px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    /* letter-spacing: 0.41px; */
-    }
-    .titletextgrid h2 span{
-        font-size: 20px;
-    
-    }
-    
-    .titletextgrid h3{
-        color: #FFF;
-    font-family: Montserrat;
-    font-size: 19px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    letter-spacing: 0.41px;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    }
-
-    .titletextgrid h3 span2{
-        font-size: 44px;
-        font-weight: 700;
-        
-    }
-    .titletextgrid p{
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 30.435px;
-        font-variant: small-caps;
-        letter-spacing: 0.2px;
-        text-align: center;
-    }
-    table {
-        border-collapse: collapse;
-      }
-      
-      td {
-        padding: 10px;
-      }
-
-
-
 }
 @media (max-width:414px){
     
@@ -1589,13 +1314,14 @@ table {
         background-position: center;
         background-size: 180%;
         background-position-y: 10%;
-        background-position-x: 100%;
+        background-position-x: 99%;
     
     
     }
     #btctitle {
+        display: none;
         position: absolute;
-        max-width: 199%;
+        width: 199%;
         height: 750px;
         margin-top: -40%;
         margin-left: -94%;
@@ -1604,6 +1330,18 @@ table {
         /* Добавляем плавное появление */
         animation: levitate 2s infinite alternate;
     }
+
+    #btctitle2{
+        display: flex;
+        position: absolute;
+        width: 15%;
+        height: 29%;
+        left: 41%;
+        margin-top: 2%;
+        transition: top 2s ease;
+        animation: levitate 2s infinite alternate;
+    }
+
     
     @keyframes levitate {
         0% {
@@ -1629,13 +1367,17 @@ table {
     }
     
     .logo {
-        margin-left: 10%;
-    margin-right: -6%;
+        position: absolute;
+       display: flex;
+       justify-content: center;
         
     }
     .logo img{
-        width: 250%;
-            
+        width: 70%;
+        padding-left: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         }
     
     .textnav {
@@ -1655,7 +1397,7 @@ table {
     }
     
     .textnav h1 {
-        opacity: 0%;
+        display: none;
         margin: 0px;
         font-family: 'Montserrat', sans-serif;
         font-size: 9px;
@@ -1677,16 +1419,10 @@ table {
     
     }
 
-    .titletext img{
-        padding-top: 9%;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    
-    }
+
     
     .backbuttom {
-        padding-top: 3%;
+
         width: 74%;
         display: flex;
         margin-left: 13%;
@@ -1707,13 +1443,15 @@ table {
         transition: all 0.5s;
         -webkit-transition: all 0.5s;
         font-family: 'Montserrat', sans-serif;
-        width: 90%;
+        width: 80%;
         font-size: 13px;
+        padding: 1%;
         font-weight: 7900;
         z-index: 1;
-        margin-top: 1%;
-        padding-left: 0%;
-        padding-right: 0%;
+        margin-top:-10%;
+        
+        padding:4%;
+
     }
 
     
@@ -1733,77 +1471,433 @@ table {
 
     .titletextgrid{
         display: flex;
+        justify-content: center;
         align-items: center;
         margin-top: 65%;
-      margin-left: 12%;
+      margin-left: 15%;
       height: 40%;
-      width: 100%;
+      width: 80%;
+      margin-bottom: 10%;
+      
     }
     .titletextgrid table{
-        width: 80.3%;
+        width: 100%;
+     
+      
         
     }
     .titletextgrid h1{
         color: #FFF;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    letter-spacing: 7.7px;
+    letter-spacing: 4.6px;
+    
     }
     .titletextgrid h2{
+        text-align: left;
         color: #FFF;
     font-family: Montserrat;
-    font-size: 19.5px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     /* letter-spacing: 0.41px; */
     }
     .titletextgrid h2 span{
-        font-size: 20px;
+        font-size: 20.79px;
     
     }
     
     .titletextgrid h3{
         color: #FFF;
     font-family: Montserrat;
-    font-size: 19px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
     letter-spacing: 0.41px;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
+
     }
 
     .titletextgrid h3 span2{
-        font-size: 44px;
+        font-size: 42px;
         font-weight: 700;
+    
+       
         
     }
     .titletextgrid p{
+        text-align: left;
         color: #FFF;
         font-family: Montserrat;
-        font-size: 14px;
+        font-size: 15px;
         font-style: normal;
         font-weight: 300;
-        line-height: 30.435px;
+        line-height: 18.435px;
         font-variant: small-caps;
-        letter-spacing: 0.2px;
+        letter-spacing: 1.34x;
+        margin-right: 10%;
         text-align: center;
+        
+
+
     }
     table {
         border-collapse: collapse;
       }
       
       td {
-        padding: 10px;
+        padding: 10Spx;
       }
 
 
 
+}
+
+@media (max-width:375px){
+
+
+    .radio-form {
+        display: block;
+        margin: auto;
+        max-width: 20em;
+        position: relative;
+        opacity: 0%;
+    }
+    
+    .radio-form input {
+        position: fixed;
+        top: -1.5em;
+        left: -1.5em;
+    }
+    
+    .radio-form label {
+        cursor: pointer;
+        display: block;
+        font-weight: bold;
+        text-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.2);
+        transition: color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    }
+    
+    .radio-form label:not(:last-of-type) {
+        margin-bottom: 0.em;
+    }
+    
+    .radio-form label span {
+        box-shadow: 0 0 0 0.2em currentColor inset, 0 0.2em 0.2em rgba(0, 0, 0, 0.2), 0 0.3em 0.2em rgba(0, 0, 0, 0.2) inset;
+        display: inline-block;
+        margin-right: 0.4em;
+        vertical-align: bottom;
+        border-radius: 50%;
+        width: 0.8em;
+        height: 0.8em;
+        transition: transform 0.2s cubic-bezier(0.5, 0, 0.5, 2), box-shadow 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95), color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    }
+    
+    .radio-form input:checked+label,
+    .radio-form input:checked+label span {
+        color: #255ff4;
+    }
+    
+    .radio-form input:checked+label,
+    .radio-form input:checked+label span {
+        transition-delay: 0.4s;
+    }
+    
+    .radio-form label span {
+        transform: scale(1.2);
+    }
+    
+    .radio-form .worm {
+        top: 0.375em;
+        left: 0.375em;
+        position: absolute;
+    }
+    
+    .radio-form .worm__segment {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0.5em;
+        height: 0.5em;
+        border-radius: 50%;
+        transition: transform 0.4s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    }
+    
+    .radio-form .worm__segment:before {
+        animation-duration: 0.4s;
+        animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+        background: currentColor;
+        content: "";
+        display: block;
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+    }
+    
+    .radio-form .worm__segment:first-child:before,
+    .radio-form .worm__segment:last-child:before {
+        box-shadow: 0 0 1em 0 currentColor;
+    }
+
+
+
+
+
+    #page1 {
+        width: 100%;
+        height: 869px;
+        /* background-color: rgba(255, 255, 255, 0.192); */
+        background-image: url(../svg/titlesvg.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 180%;
+        background-position-y: 10%;
+        background-position-x: 99%;
+    
+    
+    }
+    #btctitle {
+        display: none;
+        position: absolute;
+        width: 199%;
+        height: 750px;
+        margin-top: -40%;
+        margin-left: -94%;
+        /* Изначально элемент будет скрыт за пределами видимой области */
+        transition: top 2s ease;
+        /* Добавляем плавное появление */
+        animation: levitate 2s infinite alternate;
+    }
+
+    #btctitle2{
+        display: flex;
+        position: absolute;
+        width: 15%;
+        height: 29%;
+        left: 41%;
+        margin-top: 2%;
+        transition: top 2s ease;
+        animation: levitate 2s infinite alternate;
+    }
+
+    
+    @keyframes levitate {
+        0% {
+            transform: translateY(0);
+        }
+    
+        100% {
+            transform: translateY(-10px);
+        }
+    }
+    
+    #vector1 {
+        width: 100%;
+        height: 1080px;
+        z-index: -1;
+    }
+    
+    /* --------- НАВИГАЦИЯ----------- */
+    
+    .nav {
+        width: 100%;
+        height: 100px;
+    }
+    
+    .logo {
+        position: absolute;
+       display: flex;
+       justify-content: center;
+        
+    }
+    .logo img{
+        width: 70%;
+        padding-left: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    
+    .textnav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100px;
+    }
+    
+    .texth1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        margin-left: -20%;
+        height: 100px;
+    }
+    
+    .textnav h1 {
+        display: none;
+        margin: 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 9px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .titletext {
+        margin-top: -8%;
+        display: flex;
+        justify-content: center;
+        width: 800px;
+        height: 35%;
+    
+    }
+
+
+    
+    .backbuttom {
+
+        width: 74%;
+        display: flex;
+        margin-left: 13%;
+    
+    }
+    .button {
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        border: 0;
+        border-radius: 100px;
+        background-color: #42D4F8;
+        color: #ffffff;
+        font-weight: Bold;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        font-family: 'Montserrat', sans-serif;
+        width: 80%;
+        font-size: 13px;
+        padding: 1%;
+        font-weight: 7900;
+        z-index: 1;
+        margin-top:-10%;
+        
+        padding:4%;
+
+    }
+
+    
+    .button:hover {
+        background-color: #6fc5ff;
+        box-shadow: 0 0 20px #6fc5ff50;
+        transform: scale(1.1);
+    }
+    
+    .button:active {
+        background-color: #3d94cf;
+        transition: all 0.25s;
+        -webkit-transition: all 0.25s;
+        box-shadow: none;
+        transform: scale(0.98);
+    }
+
+    .titletextgrid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 54%;
+      margin-left: 16%;
+      height: 40%;
+      width: 80%;
+      
+    }
+    .titletextgrid table{
+        width: 100%;
+     
+      
+        
+    }
+    .titletextgrid h1{
+        color: #FFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 4.6px;
+    
+    }
+    .titletextgrid h2{
+        text-align: left;
+        color: #FFF;
+    font-family: Montserrat;
+    font-size: 17.75px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    /* letter-spacing: 0.41px; */
+
+    }
+    .titletextgrid h2 span{
+        font-size: 18.3px;
+    
+    }
+    
+    .titletextgrid h3{
+        color: #FFF;
+    font-family: Montserrat;
+    font-size: 14.3px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 0.41px;
+    padding-top: 5%;
+    padding-bottom: 1%;
+
+    }
+
+    .titletextgrid h3 span2{
+        font-size: 33px;
+        font-weight: 700;
+    
+       
+        
+    }
+    .titletextgrid p{
+        text-align: left;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18.435px;
+        font-variant: small-caps;
+        letter-spacing: 1.34x;
+        padding-right: 3.5%;
+        text-align: center;
+        
+
+
+    }
+    table {
+        border-collapse: collapse;
+      }
+      
+      td {
+        padding: 8px;
+      }
 }
 /* ------------Вторвая страгница---------------- */
 #page2 {
@@ -1909,6 +2003,9 @@ table {
     font-size: 27px;
     font-weight: 500;
 
+}
+#page1{
+    height: 700px;
 }
 }
 @media (max-width:428px){
@@ -5477,7 +5574,9 @@ html {
         align-items: center;   
         flex-direction: column; 
     }
-
+    #imgp8btc{
+        display: none;
+    }
     #page8 h2 {
         position: relative;
         color: #ffff;
