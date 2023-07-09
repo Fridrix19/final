@@ -50,9 +50,9 @@
   </div>
 
   <div id="page1">
-    <img id="btctitle" src="svg/btctitle.svg" alt="" draggable="false">
+    <img  id="btctitle" src="svg/btctitle.svg" alt="" draggable="false">
     <img id="vector1" style="position: absolute;z-index: -1;" src="img/Vector 1.png" alt="" draggable="false">
-    <img id="btctitle2" src="svg/btctitle2.svg" alt="">
+    <img  id="btctitle2" src="svg/btctitle2.svg" alt="">
 
     <nav class="nav">
      
@@ -76,7 +76,7 @@
           <td colspan="2"><h2>ОБУЧИСЬ <span1 style="color:#42D4F8;">СТРАТЕГИИ</span1> ПО<br><span>КОТОРОЙ МЫ СДЕЛАЛИ</span></h2></td>
         </tr>
         <tr>
-          <td ><h3><span2 style="color:#42D4F8;">167%</span2><br>К ДЕПОЗИТУ</h3></td>
+          <td id="h3hp1" ><h3 ><span2 style="color:#42D4F8;">167%</span2><br>К ДЕПОЗИТУ</h3></td>
           <td><h3><span2 style="color:#42D4F8;">ЗА 6</span2><br>МЕСЯЦЕВ</h3></td>
         </tr>
         <tr>
@@ -313,7 +313,7 @@
           src="svg/polo2.svg" alt="svg">
         <h1>ЛИЧНАЯ РАБОТА</h1>
         <img src="svg/borderp8.svg" alt="">
-        <p>Все что входит в <span>групповое<br>наставничество,</span>
+        <p style="margin-bottom: 14px;">Все что входит в <span>групповое<br>наставничество,</span>
           плюс:</p>
         <p>Ежемесячная зум сессия - ревью<br>
           месяца</p>
@@ -418,6 +418,26 @@
 
   <script>
   
+  var img1 = document.getElementById("img3p9");
+  var img2 = document.getElementById("img4p9");
+
+  // Массив с ссылками на изображения
+  var images = [
+    "img/Group first.png",
+    "img/Group second.png"
+  ];
+
+  var currentIndex = 0;
+
+  // Функция для смены изображения
+  function changeImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    img1.src = images[currentIndex];
+    img2.src = images[(currentIndex + 1) % images.length];
+  }
+
+  // Вызываем функцию changeImage() каждые 5 секунд
+  setInterval(changeImage, 5000);
 
 
     const button = document.getElementById('p8');
